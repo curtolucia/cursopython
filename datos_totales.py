@@ -28,3 +28,8 @@ def datos_totales(ruta_entrada, ruta_salida, datos):
             #agrego datos abajo del encabezado
             f.write(dato)
             f.close()
+
+#otra forma de guardar, concatenando
+#            resultados = pd.concat([fechora, u, v, w, viento_total], axis=1, keys=['time', 'u', 'v', 'w', 'viento_total'])
+#            resultados.to_csv = (ruta_salida + datos + str(n) + '_' + str(arch) + '.csv')
+#        return
